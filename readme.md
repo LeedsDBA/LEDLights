@@ -8,7 +8,7 @@ I wanted to write up a little bit about my dev setup. I don't often find this in
 
 Your dev environment can totally be different, but here's what i'm doing...
 
-regardless of whether you use Arduino IDE or vscode, you still need the IDE installed. I choose to use vscode as the editor because i'm familiar with it, it's quick and i can use extensions and sync with git etc.
+Regardless of whether you use Arduino IDE or vscode as your editor, you still need the Arduino IDE installed for its libraries etc. I choose to use vscode as the editor because i'm familiar with it, it's quick and i can use extensions and sync with git etc.
 
 **Versions below aren't a requirement, it's just what i'm using for your reference**
 
