@@ -27,5 +27,20 @@ installed vscode (v1.47.2) https://code.visualstudio.com/
 # Schematic
 ![Schematic - Arduino connected to LED Strip](schematic.png)
 
+## Power
+LED strip i'm using is WS2812B compatible - https://amzn.to/3303nyW
+and uses 5050SMD LEDs - 5V DC, 350-450mcd/led - http://led-obzor.com/led/technical-specifications-smd-5050
+Per LED:
+ - Power: 0.21 W
+ - Supply voltage: 3.3 volts
+ - Rated current: 60mA (3x 20mA - per R/G/B)
+
+ The strip we're working with is 36 pcs long, so:
+
+ 60mA * 36 pcs = 2160 mA = 2.16 A @ 3.3VDC - which is probably 3x LEDs too much for a 2A USB feed...
+ 60mA * 33 pcs = MAX 1980 mA = 1.98 A @ 3.3VDC (i.e. if all LEDS were at 255)
+
+Should be able to run power from arduino 3.3VDC feed at that ampage (for 33 pcs), **but any more would need its own feed to run at MAX**.
+
 ## Arduino Pinout
 ![Arduino pinout](Pinout-NANO33IoT_latest.png)
