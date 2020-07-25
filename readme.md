@@ -10,6 +10,9 @@ Your dev environment can totally be different, but here's what i'm doing...
 
 Regardless of whether you use Arduino IDE or vscode as your editor, you still need the Arduino IDE installed for its libraries etc. I choose to use vscode as the editor because i'm familiar with it, it's quick and i can use extensions and sync with git etc.
 
+I've included an [arduino.json](.vscode/arduino.json) file which should set up the board and programmer for you within vscode - if not, select ArduinoISP and Arduino Nano 33 IoT as your board (if that's what you're using!) - **you will need to update this to point at the correct COM port, or select from the bottom right hand of vscode**
+
+## Software
 **Versions below aren't a requirement, it's just what i'm using for your reference**
 
 installed Arduino IDE (v1.8.13) https://www.arduino.cc/en/Main/Software

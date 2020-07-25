@@ -1,6 +1,5 @@
 {
     "programmer": "ArduinoISP",
-    "board": "arduino:avr:nano",
-    "configuration": "cpu=atmega328",
-    "port": "COM1"
+    "board": "arduino:samd:nano_33_iot",
+    "port": "COM3"
 }
