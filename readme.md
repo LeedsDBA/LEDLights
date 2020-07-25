@@ -1,3 +1,7 @@
+# Intro
+
+An arduino sketch to run an LED strip behind my monitor. Ambition is to have an API to call, and an ambient light sensor to set brightness & on/off.
+
 # Dev Environment
 
 I wanted to write up a little bit about my dev setup. I don't often find this included in projects, so thought it was a good practice to get into including it here.
