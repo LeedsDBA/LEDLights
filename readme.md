@@ -1,6 +1,8 @@
 # Intro
 
-An arduino sketch to run an LED strip behind my monitor. Ambition is to have an API to call, and an ambient light sensor to set brightness & on/off.
+An arduino sketch to run an LED strip behind my monitor. Using a [WS2812B compatible LED strip](https://amzn.to/3303nyW) and an [Arduino Nano 33 IoT](https://amzn.to/2ZZbbiT).
+
+Ambition is to have an API to call, and an ambient light sensor to set brightness & on/off and maybe an overall power switch.
 
 # Dev Environment
 
@@ -24,6 +26,7 @@ installed vscode (v1.47.2) https://code.visualstudio.com/
 
  - Add Microsoft extension for Arduino (vsciot-vscode.vscode-arduino)
  - Install git (allows you to use GitHub etc for source) - https://git-scm.com/download/
+ - Add FastLED library (CTRL+SHIFT+P type: Arduino:Library Manager) (v3.3.3)
 
  Set up source control - Azure Repos/GitHub (I'm using GitHub)
 
@@ -43,7 +46,7 @@ Per LED:
  60mA * 36 pcs = 2160 mA = 2.16 A @ 3.3VDC - which is probably 3x LEDs too much for a 2A USB feed...
  60mA * 33 pcs = MAX 1980 mA = 1.98 A @ 3.3VDC (i.e. if all LEDS were at 255)
 
-Should be able to run power from arduino 3.3VDC feed at that ampage (for 33 pcs), **but any more would need its own feed to run at MAX**.
+Should be able to run power from arduino 3.3VDC feed at that ampage (for 33 pcs), **but any more would need its own feed to run at MAX (i.e. RGB: 255,255,255)**.
 
 ## Arduino Pinout
 ![Arduino pinout](Pinout-NANO33IoT_latest.png)
