@@ -80,9 +80,9 @@ void setup() {
     // FastLED.addLeds<SK9822, DATA_PIN, CLOCK_PIN, RGB>(leds, NUM_LEDS);  // BGR ordering is typical
 
     // FastLED.setBrightness(CRGB(255,255,255));
-
     RGBWloop();
-    flashLEDs(0,255,0,1,1000);
+    flashLEDs(255,255,255,3,200);
+
 }
 
 void loop() {
@@ -102,8 +102,6 @@ void RGBWloop() {
     for (r = 0; r < 255; r++) {
 
         setAllLEDs(r,g,b);
-        
-        FastLED.show();
     }
 
     //reset
@@ -113,8 +111,6 @@ void RGBWloop() {
     for (g = 0; g < 255; g++) {
 
         setAllLEDs(r,g,b);
-        
-        FastLED.show();
     }
 
     //reset
@@ -124,8 +120,6 @@ void RGBWloop() {
     for (b = 0; b < 255; b++) {
 
         setAllLEDs(r,g,b);
-        
-        FastLED.show();
     }
 
     //reset
@@ -136,8 +130,6 @@ void RGBWloop() {
 
         // drive all to same value
         setAllLEDs(w,w,w);
-        
-        FastLED.show();
     }
 
     LEDsOff();
@@ -169,8 +161,8 @@ void flashLEDs(int r, int g, int b, int numberOfFlashes,int durationMS) {
 
 void setAllLEDs(int r, int g, int b){
 
-    for (int i = 0; i < NUM_LEDS; i++)
-        {
+    for (int i = 0; i < NUM_LEDS; i++) {
             leds[i] = CRGB(g,r,b);  //our light is GRB
-        }
+    }
+    FastLED.show();
 }
