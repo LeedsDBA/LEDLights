@@ -23,3 +23,9 @@ installed vscode (v1.47.2) https://code.visualstudio.com/
  - Install git (allows you to use GitHub etc for source) - https://git-scm.com/download/
 
  Set up source control - Azure Repos/GitHub (I'm using GitHub)
+
+# Schematic
+![Schematic - Arduino connected to LED Strip](schematic.png)
+
+## Arduino Pinout
+![Arduino pinout](Pinout-NANO33IoT_latest.png)
